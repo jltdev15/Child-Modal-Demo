@@ -3,7 +3,7 @@ const Modal = ({ isOpen, onClose, children }) => {
   return (
     <>
       <div className={`modal-overlay ${isOpen ? "" : "hidden"}`}>
-        <div className="modal-content bg-gray-50" onClick={onClose}>
+        <div className="modal-content" onClick={onClose}>
           <div
             className="bg-gray-50 flex flex-col "
             onClick={(e) => e.stopPropagation()}
