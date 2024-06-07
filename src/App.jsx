@@ -17,14 +17,16 @@ function App() {
         {/* First modal */}
 
         <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-          <h2>Hello from the Modal!</h2>
-          <p>This is some modal content.</p>
-          <button
-            className="bg-red-500 w-full inline-block"
-            onClick={() => setShowModal(false)}
-          >
-            Close
-          </button>
+          <div className="bg-gray-50">
+            <h2>Hello from the Modal!</h2>
+            <p>This is some modal content.</p>
+            <button
+              className="bg-red-500 w-full text-gray-50 p-3 inline-block"
+              onClick={() => setShowModal(false)}
+            >
+              Close
+            </button>
+          </div>
         </Modal>
 
         {/* Second Modal */}
@@ -41,7 +43,12 @@ function App() {
         >
           <h2>Hello from the Second Modal!</h2>
           <p>This is some modal content.</p>
-          <button onClick={() => setShowModalSecond(false)}>Close</button>
+          <button
+            className="bg-red-500 w-full text-gray-50 p-3 inline-block"
+            onClick={() => setShowModalSecond(false)}
+          >
+            Close
+          </button>
         </Modal>
       </div>
     </>
